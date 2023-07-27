@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transport Widget</title>
+
+    <link rel="shortcut icon" href="./src/assets/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body
+    class="min-h-screen bg-slate-200 font-['Inter'] grid place-items-center text-[#372D3B] select-none dark:bg-[#292738]"
+  >
+    <div id="toggle-theme" class="bg-[#FFFFFF] w-fit absolute top-4 right-8 p-2 rounded-full cursor-pointer dark:bg-[#E5D8EA] md:left-[50%] md:translate-x-[-50%]">
+      <img src="./src/assets/moon.svg" alt="Ícone da lua" class="w-[20px]">
+    </div>
+
+    <main
+      class="bg-[#ffffff] w-[90%] max-w-[795px] rounded-[40px] px-14 py-6 flex flex-col gap-[99px] my-8 m-auto dark:bg-[#363447] md:px-8"
+    >
+      <div class="w-[168px] h-[15px] bg-[#E5D8EA] rounded-full m-auto"></div>
+
+      <div>
+        <h2 class="text-[40px] font-bold leading-10 mb-1 dark:text-[#ffffffda] sm:text-3xl/tight">
+          Encontre
+          <span class="text-[#864293]">Boris</span>
+          no local de partida
+        </h2>
+        <p class="text-[25px] leading-7 dark:text-[#ffffffda] sm:text-lg/tight">Chega em 3 minutos (800 metros)</p>
+      </div>
+
+      <div class="flex justify-between items-center flex-wrap gap-4 md:flex-col md:justify-center">
+        <img
+          src="./src/assets/car.png"
+          alt="Imagem do carro com o perfil do motorista"
+          class="sm:w-[80%]"
+        />
+
+        <div class="flex flex-col gap-3 dark:text-[#ffffffda] sm:gap-0">
+          <strong class="text-[40px] leading-[50px] sm:text-3xl/tight">BCD0D19</strong>
+          <p class="text-2xl leading-[30px] sm:text-base">Honda Civic Roxo</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-8 mb-3 sm:gap-3">
+        <input 
+          class="flex-1 bg-[#F5EDF7] rounded-3xl px-7 h-16 text-2xl placeholder:text-2xl placeholder:text-[#372D3B] hover:outline hover:outline-2 hover:outline-[#864293] focus:outline focus:outline-2 focus:outline-[#864293] dark:bg-[#d8d8d8e6] md:w-full sm:h-10 sm:placeholder:text-base"
+          type="text" 
+          placeholder="Enviar mensagem para Boris..." 
+        />
+        <div class="flex justify-between w-[134px] md:w-fit md:gap-4">
+          <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:w-8 sm:w-6">
+            <path d="M48.8879 36.5503C48.4599 39.8024 46.8628 42.7876 44.3948 44.9482C41.9268 47.1088 38.7567 48.2971 35.4766 48.2912C16.4204 48.2912 0.91622 32.7871 0.91622 13.7309C0.91034 10.4508 2.09868 7.28066 4.25929 4.81265C6.4199 2.34464 9.40503 0.747515 12.6571 0.319574C13.4795 0.21916 14.3123 0.387404 15.0312 0.799191C15.7501 1.21098 16.3165 1.84422 16.646 2.6044L21.7148 13.9205V13.9493C21.967 14.5312 22.0712 15.1665 22.018 15.7985C21.9648 16.4304 21.7559 17.0394 21.41 17.5709C21.3668 17.6357 21.3212 17.6957 21.2732 17.7557L16.2764 23.679C18.074 27.3318 21.8948 31.1191 25.5957 32.9215L31.4373 27.951C31.4947 27.9028 31.5548 27.8579 31.6173 27.8166C32.1484 27.4624 32.7595 27.2462 33.3952 27.1875C34.0309 27.1288 34.6712 27.2296 35.2582 27.4806L35.2894 27.495L46.5959 32.5615C47.3574 32.8897 47.9922 33.4557 48.4053 34.1747C48.8185 34.8937 48.9878 35.7271 48.8879 36.5503Z" fill="#372D3B" class="cursor-pointer transition duration-300 ease-in-out hover:fill-[#864293] dark:fill-[#BDCDD6] hover:dark:fill-[#864293]"/>
+            </svg>
+            <svg width="47" height="49" viewBox="0 0 47 49" fill="none" xmlns="http://www.w3.org/2000/svg" class="md:w-8 sm:w-6">
+              <path d="M43.1596 0.29126H4.75619C3.73767 0.29126 2.76086 0.695866 2.04066 1.41607C1.32045 2.13628 0.915848 3.11308 0.915848 4.13161V18.2377C0.915848 39.7484 19.1143 46.8819 22.7578 48.0916C23.5357 48.3578 24.3801 48.3578 25.158 48.0916C28.8064 46.8795 47 39.746 47 18.2353V4.13161C47 3.11308 46.5954 2.13628 45.8752 1.41607C45.155 0.695866 44.1782 0.29126 43.1596 0.29126ZM31.6386 23.3333H25.8781V29.0939C25.8781 29.6031 25.6758 30.0915 25.3157 30.4516C24.9556 30.8117 24.4672 31.014 23.9579 31.014C23.4487 31.014 22.9603 30.8117 22.6002 30.4516C22.2401 30.0915 22.0377 29.6031 22.0377 29.0939V23.3333H16.2772C15.768 23.3333 15.2796 23.131 14.9195 22.7709C14.5594 22.4108 14.3571 21.9224 14.3571 21.4132C14.3571 20.9039 14.5594 20.4155 14.9195 20.0554C15.2796 19.6953 15.768 19.493 16.2772 19.493H22.0377V13.7325C22.0377 13.2232 22.2401 12.7348 22.6002 12.3747C22.9603 12.0146 23.4487 11.8123 23.9579 11.8123C24.4672 11.8123 24.9556 12.0146 25.3157 12.3747C25.6758 12.7348 25.8781 13.2232 25.8781 13.7325V19.493H31.6386C32.1479 19.493 32.6363 19.6953 32.9964 20.0554C33.3565 20.4155 33.5588 20.9039 33.5588 21.4132C33.5588 21.9224 33.3565 22.4108 32.9964 22.7709C32.6363 23.131 32.1479 23.3333 31.6386 23.3333Z" fill="#372D3B" class="cursor-pointer transition duration-300 ease-in-out hover:fill-[#864293] dark:fill-[#BDCDD6] hover:dark:fill-[#864293]"/>
+              </svg>
+              
+        </div>
+      </div>
+    </main>
+
+    <script src="./src/main.js"></script>
+  </body>
+</html>
